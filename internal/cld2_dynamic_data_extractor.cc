@@ -257,7 +257,7 @@ void alignAll(CLD2DynamicData::FileHeader* header, const int alignment) {
     offset += header->lengthOf_kAvgDeltaOctaScore;
   }
   
-  for (int x=0; x<header->numTablesEncoded; x++) {
+  for (uint32 x=0; x<header->numTablesEncoded; x++) {
     CLD2DynamicData::TableHeader& tableHeader = header->tableHeaders[x];
     int tablePad = alignment - (offset % alignment);
     if (tablePad == alignment) tablePad = 0;
