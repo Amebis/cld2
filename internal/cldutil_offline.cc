@@ -20,8 +20,6 @@
 #include "tote.h"
 #include <string>
 
-static const int kMinCJKUTF8CharBytes = 3;
-
 //------------------------------------------------------------------------------
 // Offline: used by mapreduce or table construction
 //------------------------------------------------------------------------------
