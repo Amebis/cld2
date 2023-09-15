@@ -694,7 +694,7 @@ bool ScriptScanner::GetOneTextSpan(LangSpan* span) {
   script_buffer_[1] = '\0';
   int take = 0;
   int put = 1;              // Start after the initial space
-  int tlen, plen;
+  int tlen = 0, plen;
 
   if (byte_length_ <= 0) {
     return false;          // No more text to be found
